@@ -6,7 +6,7 @@ const app=express();
 
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost:27012/pokemonapi",{useNewUrlParser:true},()=>{
+mongoose.connect("mongodb://localhost:27017/pokemonapi",{useNewUrlParser:true},()=>{
     console.log("Mongodb connceted !!");
 });
 
