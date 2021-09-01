@@ -34,14 +34,14 @@ app.get("/pokemon_api/:id",async (req,res)=>{
 
 });
 
-app.get("pokemon_api/type/:type",async (req,res)=>{
+app.get("/pokemon_api/type/:type",async (req,res)=>{
     let type=req.params.type;
     let pokemontype=await apiModel.find({type:type});
     res.send(pokemontype);
 });
 
 
-app.post("pokemon_api",(req,res)=>{
+app.post("/pokemon_api",(req,res)=>{
 
     let pokemon=req.body;
 
